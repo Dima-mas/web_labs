@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    
+    font-family: Impact;
+    color: rgb(235, 0, 252);
+    text-align: center;
+    background-color: chartreuse;
+    border-radius: 40px;
+}
+
+body {
+    background-color: rgb(191, 243, 251);
+    padding: 1%;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(234, 205, 205);
+    border-radius: 20px;
+
+    a {
+        font-size: 100%;
+        color: crimson;
+        margin: 1%;
+
+        &:hover {
+            color: olivedrab;
+        }
+        
+        &:visited {
+            color: blueviolet;
+            &:active {
+                color: rgb(255, 24, 255);
+            }
+        }
+    }
+
+    a + a {
+        border-left: 2px solid #2f2d2d;
+        padding-left: 1%;
+        border-radius: 0px;
+
+    }
+}
+
+h2 {
+    font-size: 175%;
+    text-align: center;
+    background-color: skyblue;
+    margin: 0.2% 0.4%;
+    border-radius: 30px;
+}
+
+
+span {
+    font-size: 125%;
+}
+
+a {
+    font-size: 100%;
+    color: crimson;
+    margin: 1%;
+    border-radius: 10px;
+
+    &:hover {
+        color: olivedrab;
+    }
+
+    &:visited {
+        color: blueviolet;
+
+        &:active {
+            color: rgb(255, 24, 255);
+        }
+    }
+}
+
+p {
+    font-size: 125%;
+}
+
+p[type="fake_info"] {
+    color: rgb(191, 243, 251);
+    background-color: white;
+
+    &:hover {
+        color: red;
+    }
+}
+
+
+.list {
+    margin: 0.2% 0.4%;
+    margin-left: auto;
+    border-radius: 60px;
+    padding: 2%;
+    background-color: rgb(254, 251, 166);
+    font-size: 125%;
+}
+
+.sub {
+    font-size: 150%;
+    opacity: 40%;
+}
+
+
+#about_me {
+    font-family: sans-serif;
+    text-align: end;
+    width: fit-content;
+    list-style: none;
+
+
+    li {
+        &::after {
+            content: "  •";
+            font-size: 125%;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    footer a {
+        justify-content: flex-start;
+        overflow-wrap: anywhere;
+    }
+
+    footer a + a {
+        border-left: none;
+        border-top: 2px solid #2f2d2d;
+        padding-left: 0px;
+        padding-top: 1%;
+    }
+}
