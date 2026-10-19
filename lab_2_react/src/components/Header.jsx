@@ -1,13 +1,7 @@
 function Header() {
     return (
-        <header style={{
-            textAlign: 'center',
-            fontSize: '400%',
-            fontFamily: 'Impact',
-            color: 'rgb(35, 196, 35)'}}>
-            <h1>
-                My resume
-            </h1>
+        <header className="text-center text-[400%] font-[Impact] text-[rgb(235,0,252)] bg-[chartreuse] rounded-[40px]">
+            <h1>My resume</h1>
         </header>
     );
 }

@@ -1,3 +1,4 @@
+import Main from './components/Main';
 import Header from './components/Header';
 
 import General_info from './components/General_info';
@@ -10,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <Main>
       <Header />
       <General_info />
       <Education />
@@ -18,7 +19,8 @@ function App() {
       <Soft_skills />
       <Hard_skills />
       <Footer />
-    </div>
+    </Main>
+      
   );
 }
 
